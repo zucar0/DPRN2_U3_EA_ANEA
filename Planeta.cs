@@ -233,19 +233,4 @@ abstract class Planeta{
         }
     }
 
-    public static Dictionary<string, string[]> dict = new Dictionary<string, string[]>()
-    {
-        { "key1", new[]{ "value", "another value", "and another" }},
-        { "key2", new[]{ "value", "another value", "and another" }}
-
-    };
-
-    public void imprimirDict()
-    {
-        System.Console.WriteLine(dict);
-    }
-
-
-
-
 }

@@ -1,34 +1,27 @@
 using System;
 using System.Collections.Generic;
 
-class Creador:Planeta
+class Creador 
 {
-    public Creador(string name, string rotation_period, string orbital_period, string diameter, string climate, string gravity, string terrain, string surface_water, string population, /*List<string> residents, List<string> films,*/DateTime created, DateTime edited, string url):base(name, rotation_period, orbital_period, diameter, climate, gravity, terrain, surface_water, population, /*residents, films,*/ created, edited, url){}
+     //Datos miembro.
+    public string name { get; set; }
+    public string rotation_period { get; set; }
+    public string orbital_period { get; set; }
+    public string diameter { get; set; }
+    public string climate { get; set; }
+    public string gravity { get; set; }
+    public string terrain { get; set; }
+    public string surface_water{ get; set; }
+    public string population{ get; set; }
+    public DateTime created{ get; set; }
+    public DateTime edited{ get; set; }
+    public string url{ get; set; }
+    public int residents{get;set;}
+    public int films{get;set;}
 
-    public override string crearNuevoUniverso()
-    {
-        throw new NotImplementedException();
-    }
-    public override string mirarListaDePlanetas()
-    {
-        throw new NotImplementedException();
-    }
-    public override string elegirPlaneta()
-    {
-        throw new NotImplementedException();
-    }
-    public override string destruirPlaneta()
-    {
-        throw new NotImplementedException();
-    }
-    public override string crearNuevoPlaneta()
-    {
 
-        throw new NotImplementedException();
-
-    }
-    public override string transferirPlaneta()
-    {
-        throw new NotImplementedException();
-    }
+    // public int Id { get; set; }
+    // public string Nombre { get; set; }
+    // public string Telefono { get; set; }
+    // public int Edad { get; set; }
 }
