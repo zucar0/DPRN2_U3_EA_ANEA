@@ -208,7 +208,44 @@ abstract class Planeta{
         // Console.Write("Este es el destructor ejecutándose para destruir el objeto de la clase Factura");
     } 
 
+    public static DateTime date1 = DateTime.Now;
+    public static string dateUno = date1.ToString("dd/MM/yyyy h:mm:ss");
+    public static DateTime date2 = DateTime.Now;
+    public static string dateDos = date2.ToString("dd/MM/yyyy h:mm:ss");
+
+    public static DateTime now = DateTime.Now;
+    public static string asString = now.ToString("dd MMMM yyyy hh:mm:ss tt");
+
     string[,] planetas={
-        {"Tatooine", "23", "304", "10465", "arid", "1 standard", "desert",  "1", "200000", "2014-12-09T13:50:49.641000Z", "2014-12-20T20:58:18.411000Z", "http://swapi.dev/api/planets/1/" }
+        {"Tatooine", "23", "304", "10465", "arid", "1 standard", "desert",  "1", "200000", asString, asString, "http://swapi.dev/api/planets/1/" },
+        {"Alderaan","24","364","12500","temperate", "1 standard", "grasslands, mountains", "40", "2000000000",asString, asString, "http://swapi.dev/api/planets/2/" }
+    };    
+
+    public void imprimirPlanetas(string[,] matriz)
+    {
+        for(int i=0; i<matriz.GetLength(0);i++)
+        {
+            for(int j=0; j < matriz.GetLength(1); j++)
+            {
+                Console.Write(matriz[i,j]+" ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    public static Dictionary<string, string[]> dict = new Dictionary<string, string[]>()
+    {
+        { "key1", new[]{ "value", "another value", "and another" }},
+        { "key2", new[]{ "value", "another value", "and another" }}
+
     };
+
+    public void imprimirDict()
+    {
+        System.Console.WriteLine(dict);
+    }
+
+
+
+
 }
