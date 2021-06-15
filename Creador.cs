@@ -18,7 +18,7 @@ class Creador
     public string url{ get; set; }
     public int residents{get;set;}
     public int films{get;set;}
-
+    public int id{get; set;}
 
     // public int Id { get; set; }
     // public string Nombre { get; set; }
